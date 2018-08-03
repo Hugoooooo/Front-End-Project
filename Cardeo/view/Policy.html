@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />    
+<link rel="shortcut icon" href="../public/imgs/icons/favicon.ico">  
+  <link href="../public/css/progress.css" rel="stylesheet">  
+  <link href="../public/css/line-progress.css" rel="stylesheet">
+  <link href="../public/css/bootstrap.min.css" rel="stylesheet" >
+  <script src="../public/js/jquery.min.js" ></script>     
+  <script src="../public/js/bootstrap.min.js" ></script>  
+  <link href="../public/css/cardeo.css" rel="stylesheet">   
+  <link href="../public/css/style.css" rel="stylesheet">  
+  <link href="../public/css/element.css" rel="stylesheet">
+  <link href="../public/css/policy_custom.css" rel="stylesheet">    
+  <title>Cardeo頁面</title>
+</head>
+<body>
+<div class="page-header full-header">
+    <div class="row">
+        <div class="col-sm-12">
+            <a href="../public/">
+                </a>
+        </div>
+    </div>
+</div>
+<div class="header-shadow full-header"></div>
+<div class="header-shadow header-shadow-right full-header"></div>
+ 
+<div class="container">
+    <div class="col-page col-page-right"> </div>
+    <div class="col-page col-page-left"> </div>  
+    <!--                   Part[A]                         -->   
+    <div class="row list-all">
+        <div class="col-md-4 col-sm-4 list-div-main hidden-xs">
+            <div class="step-all">            
+                <div class="row">
+                    <div id="progress" data-dimension="210"  data-text="" data-fontsize="44" data-percent="25" data-fgcolor="#30B455" data-bgcolor="#eee" data-width="15" data-bordersize="25" data-animationstep="0.4">
+                        <div class="prg-text">你已完成</div>
+                    </div>
+                </div>
+            </div>           
+        </div>
+        <!--Start-PC-->  
+        <!--完成度的比例會根據 .list-div-sub 底下的 .icon-Y數量 * 25%-->      
+        <div class="col-md-2 col-sm-2 hidden-xs list-div-sub">
+            <div class="step step-1">              
+                <div class="icon-Y" id="icon-query"><div class="icon-text">保單查詢</div></div>
+                <div class="list-sub"><a href="#">去查詢▶</a></div>   
+                <div class="greet">Hi,王大明你好</div>
+            </div>         
+        </div>        
+        <div class="col-md-2 col-sm-2 hidden-xs list-div-sub">
+            <div class="step step-2">  
+                <div class="icon-Y" id="icon-change"><div class="icon-text">線上變更</div></div>
+                <div class="list-sub"><a href="#">去變更▶</a></div>  
+            </div>            
+        </div>    
+        <div class="col-md-2 col-sm-2 hidden-xs list-div-sub">
+            <div class="step step-3">  
+                <div class="icon-N" id="icon-eapply"><div class="icon-text">網路投保</div></div>
+                <div class="list-sub"><a href="#">去投保▶</a></div>    
+            </div>           
+        </div>    
+        <div class="col-md-2 col-sm-2 hidden-xs list-div-sub">
+            <div class="step step-4">              
+                <div class="icon-Y" id="icon-eform"><div class="icon-text">電子單據</div></div>
+                <div class="list-sub"><a href="#">去開通▶</a></div>  
+            </div>            
+        </div>   
+        <!--END-PC-->  
+        <!--Start-Mobile-->
+        <div class="row visible-xs col-xs-12 list-cardeo">
+            <div class="line-progress">
+                <div class="col1">
+                    <div class="mb-greet">王大名先生</div>
+                    <div class="meter" id="line-bottom">
+                        <span id="line-percent"></span>
+                    </div>
+                    <div class="td-info">
+                        <table>
+                        <tr>
+                            <td width="50%" class="td-right">你已完成</td>
+                            <td width="50%" class="td-left"><span id="percent"></span><span style="font-size:30px">%</span>
+                            </td> 
+                        </tr>
+                        </table>
+                    </div>  
+                </div>    
+            </div>      
+            <!--完成度的比例會根據 .list-cardeo 底下的 .icon-Y數量 * 25%--> 
+            <div class="carousel" data-flickity>
+                <div class="carousel-cell">   
+                    <div class="row">
+                        <div class="icon-Y" id="icon-query"><div class="icon-text">保單查詢</div></div>
+                        <div class="list-sub"><a href="#">去查詢▶</a></div>   
+                    </div>
+                </div>
+            <div class="carousel-cell">   
+                <div class="row">
+                    <div class="icon-Y" id="icon-change"><div class="icon-text">線上變更</div></div>
+                    <div class="list-sub"><a href="#">去變更▶</a></div>  
+                </div>
+            </div>
+                <div class="carousel-cell">   
+                <div class="row">
+                    <div class="icon-N" id="icon-eapply"><div class="icon-text">網路投保</div></div>
+                    <div class="list-sub"><a href="#">去投保▶</a></div> 
+                </div>
+            </div>
+                <div class="carousel-cell">   
+                <div class="row">
+                    <div class="icon-Y" id="icon-eform"><div class="icon-text">電子單據</div></div>
+                    <div class="list-sub"><a href="#">去開通▶</a></div>    
+                </div>
+                </div>
+            </div>                
+        </div>  
+        <!--End-Mobile-->
+    </div>
+    <!--                   End-Part[A]                     -->   
+    <!--                   Part[B]                         -->  
+    <div class="row margin-top-20 P-B">
+        <div class="P-list hidden-xs"><img src="../public/imgs/policylist.svg">您的保單清單</div>
+            <div class="table-box col-md-12">
+                <div class="t-head s-column">
+                    <div class="item">
+                    <div class="s-item s-item1">保單號碼</div>
+                    <div class="s-item s-item2">專案名稱</div>
+                    <div class="s-item s-item3">被保險人</div>
+                    <div class="s-item s-item4">受理日</div>
+                    <div class="s-item s-item5">操作</div>      
+                    </div>   
+                </div>
+                <div class="t-body">
+                    <div class="item">
+                        <div class="s-item s-item1">
+                            <span class="col-xs-4 visible-xs s-title">保單號碼 |</span>                     
+                            <span class="col-md-12 col-xs-8 s-contact">00123456789</span>
+                        </div>
+                        <div class=" s-item s-item2"> 
+                            <span class="col-xs-4 visible-xs s-title">專案名稱 |</span>                                                 
+                            <span class="col-md-12 col-xs-8 s-contact">打拼族</span>     
+                        </div>
+                        <div class="s-item s-item3">
+                            <span class="col-xs-4 visible-xs s-title">被保險人 |</span>                     
+                            <span class="col-md-12 col-xs-8 s-contact">王大明</span>
+                        </div>
+                        <div class="s-item s-item4">
+                            <span class="col-md-12 col-xs-4 visible-xs s-title">受理日 |</span>                     
+                            <span class="col-md-12 col-xs-8 s-contact">2017/6/22</span>
+                        </div>
+                        <div class="s-item s-item5">                    
+                            <span class="col-xs-12 s-contact">
+                                <a href="#">變更</a>
+                            </span>
+                        </div> 
+                    </div>
+                    <div class="item item-2n">
+                        <div class="s-item s-item1">
+                            <span class="col-xs-4 visible-xs s-title">保單號碼 |</span>                     
+                            <span class="col-md-12 col-xs-8 s-contact">00123456789</span>
+                        </div>
+                        <div class=" s-item s-item2">                   
+                            <span class="col-xs-4 visible-xs s-title">專案名稱 |</span>                                                 
+                            <span class="col-md-12 col-xs-8 s-contact">打拼族</span>        
+                        </div>
+                        <div class="s-item s-item3">
+                            <span class="col-xs-4 visible-xs s-title">被保險人 |</span>                     
+                            <span class="col-md-12 col-xs-8 s-contact">王大明</span>
+                        </div>
+                        <div class="s-item s-item4">
+                            <span class="col-md-12 col-xs-4 visible-xs s-title">受理日 |</span>                     
+                            <span class="col-md-12 col-xs-8 s-contact">2017/6/22</span>
+                        </div>
+                        <div class="s-item s-item5">                    
+                            <span class="col-xs-12 s-contact">
+                                <a href="#">變更</a>
+                            </span>
+                        </div> 
+                    </div>       
+                    <div class="item">
+                        <div class="s-item s-item1">
+                            <span class="col-xs-4 visible-xs s-title">保單號碼 |</span>                     
+                            <span class="col-md-12 col-xs-8 s-contact">00123456789</span>
+                        </div>
+                        <div class=" s-item s-item2">                   
+                            <span class="col-xs-4 visible-xs s-title">專案名稱 |</span>                                                 
+                            <span class="col-md-12 col-xs-8 s-contact">打拼族</span>    
+                        </div>
+                        <div class="s-item s-item3">
+                            <span class="col-xs-4 visible-xs s-title">被保險人 |</span>                     
+                            <span class="col-md-12 col-xs-8 s-contact">王大明</span>
+                        </div>
+                        <div class="s-item s-item4">
+                            <span class="col-md-12 col-xs-4 visible-xs s-title">受理日 |</span>                     
+                            <span class="col-md-12 col-xs-8 s-contact">2017/6/22</span>
+                        </div>
+                        <div class="s-item s-item5">                    
+                            <span class="col-xs-12 s-contact">
+                                <a href="#">變更</a>
+                            </span>
+                        </div> 
+                    </div>        
+                    <div class="item item-2n">
+                        <div class="s-item s-item1">
+                            <span class="col-xs-4 visible-xs s-title">保單號碼 |</span>                     
+                            <span class="col-md-12 col-xs-8 s-contact">00123456789</span>
+                        </div>
+                        <div class=" s-item s-item2">                   
+                            <span class="col-xs-4 visible-xs s-title">專案名稱 |</span>                                                 
+                            <span class="col-md-12 col-xs-8 s-contact">打拼族</span>        
+                        </div>
+                        <div class="s-item s-item3">
+                            <span class="col-xs-4 visible-xs s-title">被保險人 |</span>                     
+                            <span class="col-md-12 col-xs-8 s-contact">王大明</span>
+                        </div>
+                        <div class="s-item s-item4">
+                            <span class="col-md-12 col-xs-4 visible-xs s-title">受理日 |</span>                     
+                            <span class="col-md-12 col-xs-8 s-contact">2017/6/22</span>
+                        </div>
+                        <div class="s-item s-item5">                    
+                            <span class="col-xs-12 s-contact">
+                                <a href="#">變更</a>
+                            </span>
+                        </div> 
+                    </div>                                                         
+                </div>
+            </div>  
+    </div>  
+    <!--                   End-Part[B]                     -->             
+</div>     
+
+<div class="footer">
+    <div class="row no-gutters">
+        <div class="col-xs-12">
+            <ul class="footer-menu">
+            </ul>
+        </div>
+        <div class="col-xs-12 legal-info">
+            <span class="browser-notice">為了瀏覽網站更安全方便，建議您使用支援HTML5的瀏覽器包含: MS IE 10(含)以上、Google Chrome、Safari、Firefox及Opera瀏覽器之作業環境</span>
+        </div>
+    </div>
+    <div class="footer-tools"> <a class="go-top"><i class="ion-android-arrow-up"></i></a> </div>
+</div>
+    <!--完成度的判斷式-->
+    <script type="text/javascript">
+        document.getElementById("progress").setAttribute("data-percent",($(".list-div-sub .icon-Y").length*25));
+        document.getElementById("line-percent").style.width =  Math.round($(".list-cardeo .icon-Y").length*25) + "%" ;
+        //變更尺寸時重新載入寬度
+        window.onresize = function(event) {
+            var per=Math.round($(".list-cardeo .icon-Y").length*25)/100;
+            var line_len=document.getElementById("line-bottom").clientWidth;                   
+            document.getElementById("line-percent").style.width =(line_len *per)+"px" ;            
+        };        
+    </script>  
+    <script src="../public/js/cardeo.js"></script> 
+    <script src="../public/js/snap.svg-min.js"></script> 
+    <script src="../public/js/progress.js"></script> 
+    <script src="../public/js/app.js"></script>  
+    <script type="text/javascript">
+    $(document).ready(function() {
+        TCBLife.init();   
+    });      
+    </script>         
+</body>
+
+</html>
